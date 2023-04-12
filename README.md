@@ -1,46 +1,51 @@
-# Getting Started with Create React App and Redux
+# Netflix 2.0 with React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a complete movie streaming application built with React.js. The app is fully responsive and is intended for both desktop and mobile devices. This app is made to look and function just like Netflix.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fully responsive across all devices
+- User authentication using Google Auth
+- Integrated Stripe Checkout & Webhooks
+- Movie filtering capabilities by genre or rating
+- User can add movies to their favorites
+- User can see their watch history
+- User can view trailer previews
+- User can search for movies
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js (Frontend)
+- Redux (State management)
+- Firestore (Database)
+- Google Authentication
+- Stripe Checkout & Webhooks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository to your local machine
+2. Install dependencies by running `npm install`
+3. Create a `.env` file with the following credentials:
+   - `REACT_APP_GOOGLE_AUTH_CLIENT_ID=YOUR_CLIENT_ID`
+   - `REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY`
+   - `REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN`
+   - `REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID`
+   - `REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET`
+   - `REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID`
+   - `REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID`
+   - `REACT_APP_FIREBASE_MEASUREMENT_ID=YOUR_MEASUREMENT_ID`
+   - `REACT_APP_STRIPE_PUBLISHABLE_KEY=YOUR_PUBLISHABLE_KEY`
+   - `REACT_APP_STRIPE_SECRET_KEY=YOUR_SECRET_KEY`
+   - `REACT_APP_STRIPE_WEBHOOK_SECRET=YOUR_WEBHOOK_SECRET`
+4. To run the app on your local machine, start the development server by running `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
 
-### `npm run build`
+1. [Create an account](https://firebase.google.com/) with Firebase and create a new Firebase project
+2. Update the `.env` file with your Firebase project credentials
+3. Build the app by running `npm run build`
+4. Deploy the app to Firebase by running `firebase deploy`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Conclusion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+That's it! You now have a fully functioning movie streaming application using React.js. Feel free to fork or clone this repository and customize it according to your needs.
